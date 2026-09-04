@@ -1,5 +1,8 @@
 # BoundarySEG
 
+*An Embarrassingly Simple Method To Boost Medical Image Segmentation Performance
+for Low Data Regimes* — [arXiv:2505.09829](https://arxiv.org/abs/2505.09829)
+
 Semi-supervised 3D medical image segmentation with a **boundary-classification
 auxiliary head**. A single V-Net carries two output heads on a shared trunk: one
 predicts the segmentation mask, the other predicts a thin boundary shell as a
@@ -96,7 +99,7 @@ python test.py --dataset LA --checkpoint checkpoints/LA_4lbl_4unl/seed1337.pth
 ```
 
 Each run writes `eval_results.csv` — one row per test case plus a `MEAN` row —
-next to the checkpoint. Per-case rows are what the significance tests consume.
+next to the checkpoint. Per-case rows are what the significance tests consume. Download checkpoints from [here](https://drive.google.com/drive/folders/1Bqrkv_DffiWVkhCNBYOqJQFctY2QTvkE?usp=sharing)
 
 **Comparing your own method?** `test.py` applies the same protocol to any
 checkpoint with this repository's V-Net architecture. To compare a *different*
@@ -202,6 +205,19 @@ LICENSE, THIRD_PARTY.md  MIT, plus attribution and the medpy/GPL note
 ACDC is supported by `train.py` (`--dataset ACDC`, `--normalization batchnorm`)
 but has no turnkey script here; the paper's ACDC rows use the same recipe with
 7 or 14 labeled volumes and 20k iterations.
+
+## Citation
+
+If you use this code or the released checkpoints, please cite:
+
+```bibtex
+@article{kataria2025boundaryseg,
+  title={BoundarySeg: An Embarrassingly Simple Method To Boost Medical Image Segmentation Performance for Low Data Regimes},
+  author={Kataria, Tushar and Elhabian, Shireen Y},
+  journal={arXiv preprint arXiv:2505.09829},
+  year={2025}
+}
+```
 
 ## License
 
