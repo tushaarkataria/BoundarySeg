@@ -1,5 +1,7 @@
 # Released checkpoints
 
+Download checkpoints from [here](https://drive.google.com/drive/folders/1Bqrkv_DffiWVkhCNBYOqJQFctY2QTvkE?usp=sharing)
+
 Twelve trained models: 3 seeds × 4 splits, ~37 MB each (~433 MB total).
 
 Each file is the **last** training checkpoint (`last_model.pth`) of the run that
