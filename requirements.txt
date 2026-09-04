@@ -1,0 +1,22 @@
+# Tested with Python 3.9 and CUDA 12.1.
+#
+# Install PyTorch first, matching your CUDA version, from pytorch.org --
+# the pinned wheel below is the one all reported numbers were produced with.
+torch==2.1.2
+torchvision
+
+numpy
+scipy
+scikit-image
+h5py
+nibabel
+medpy            # Dice / Jaccard / HD95 / ASD -- NOTE: GPL-3.0, unlike
+                 # everything else here. Used in one place
+                 # (shared/evaluation.py). See THIRD_PARTY.md.
+kornia           # 3D morphological erosion, used to build the boundary target
+tensorboardX
+tqdm
+
+# Optional: CometML experiment tracking. Logging stays OFF unless COMET_API_KEY
+# is set (or --comet_key is passed), so this is not needed to train or evaluate.
+# comet_ml
