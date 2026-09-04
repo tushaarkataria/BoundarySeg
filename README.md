@@ -1,8 +1,5 @@
 # BoundarySEG
 
-*An Embarrassingly Simple Method To Boost Medical Image Segmentation Performance
-for Low Data Regimes* — [arXiv:2505.09829](https://arxiv.org/abs/2505.09829)
-
 Semi-supervised 3D medical image segmentation with a **boundary-classification
 auxiliary head**. A single V-Net carries two output heads on a shared trunk: one
 predicts the segmentation mask, the other predicts a thin boundary shell as a
@@ -18,6 +15,7 @@ nine of the ten baselines we ran score *below* the labeled-only reference of
 
 This repository contains only what is needed to reproduce the paper's numbers.
 
+[Paper Link](https://arxiv.org/abs/2505.09829)
 ---
 
 ## Results
