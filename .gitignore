@@ -1,0 +1,15 @@
+# Datasets are symlinked in; never committed.
+data/*
+!data/README.md
+
+# Training and evaluation output.
+results/
+checkpoints/*/eval_*/
+*.pth
+# Weight bundles go to GitHub Releases, not into git.
+*.zip
+!checkpoints/SHA256SUMS
+
+__pycache__/
+*.pyc
+*.log
